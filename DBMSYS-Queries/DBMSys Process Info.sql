@@ -1,4 +1,4 @@
-USE [DBMSYS_InternationalPaper_International_Paper_EMEA]
+USE [DBMSYS_CityofTucson_City_of_Tucson]
 GO
 
 SELECT Inventory.Processors.PRS_ID, Inventory.Processors.PRS_ClientID, Inventory.Processors.PRS_MOB_ID, Inventory.Processors.PRS_PAC_ID, Inventory.ProcessorArchitecture.PAC_Name, Inventory.Processors.PRS_PAV_ID, Inventory.ProcessorAvailability.PAV_Name, Inventory.Processors.PRS_PCA_ID, Inventory.ProcessorCaptions.PCA_Caption, 

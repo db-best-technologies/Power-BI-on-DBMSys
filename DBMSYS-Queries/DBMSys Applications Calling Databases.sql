@@ -1,4 +1,4 @@
-USE [DBMSYS_InternationalPaper_International_Paper]
+USE [DBMSYS_CityofTucson_City_of_Tucson]
 GO
 SELECT TOP (20000) Inventory.ApplicationConnections.ACN_ClientID, Activity.ProgramNames.PGN_Name AS [Application Name], Inventory.MonitoredObjects.MOB_ID, Inventory.MonitoredObjects.MOB_Name AS [Server Name], Inventory.ApplicationConnections.ACN_IDB_ID, Inventory.InstanceDatabases.IDB_ID, Inventory.InstanceDatabases.IDB_Name AS [Database Name]
 FROM  Inventory.ApplicationConnections INNER JOIN
