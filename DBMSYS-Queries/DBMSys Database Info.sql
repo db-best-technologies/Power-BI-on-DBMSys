@@ -1,4 +1,4 @@
-USE [DBMSYS_ScottishParliament_Scottish_Parliament]
+USE [DBMSYS_CityofTucson_City_of_Tucson]
 GO
 
 SELECT        Inventory.MonitoredObjects.MOB_ID, Consolidation.ParticipatingDatabaseServers.PDS_Server_MOB_ID AS MOB_ID_DBDetails, Inventory.InstanceDatabases.IDB_ID, 
