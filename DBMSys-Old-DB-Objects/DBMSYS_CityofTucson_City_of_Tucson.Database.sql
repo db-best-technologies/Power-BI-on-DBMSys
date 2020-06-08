@@ -1,0 +1,101 @@
+/*    ==Scripting Parameters==
+
+    Source Server Version : SQL Server 2016 (13.0.1601)
+    Source Database Engine Edition : Microsoft SQL Server Enterprise Edition
+    Source Database Engine Type : Standalone SQL Server
+
+    Target Server Version : SQL Server 2016
+    Target Database Engine Edition : Microsoft SQL Server Enterprise Edition
+    Target Database Engine Type : Standalone SQL Server
+*/
+USE [master]
+GO
+/****** Object:  Database [DBMSYS_CityofTucson_City_of_Tucson]    Script Date: 6/8/2020 1:14:01 PM ******/
+CREATE DATABASE [DBMSYS_CityofTucson_City_of_Tucson]
+ CONTAINMENT = NONE
+ ON  PRIMARY 
+( NAME = N'DBMSYS_CityofTucson_City_of_Tucson', FILENAME = N'D:\Data\DBMSYS_CityofTucson_City_of_Tucson.mdf' , SIZE = 121774080KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+ LOG ON 
+( NAME = N'DBMSYS_CityofTucson_City_of_Tucson_log', FILENAME = N'E:\Logs\DBMSYS_CityofTucson_City_of_Tucson_log.ldf' , SIZE = 663552KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET COMPATIBILITY_LEVEL = 130
+GO
+IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
+begin
+EXEC [DBMSYS_CityofTucson_City_of_Tucson].[dbo].[sp_fulltext_database] @action = 'enable'
+end
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET ANSI_NULL_DEFAULT OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET ANSI_NULLS OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET ANSI_PADDING OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET ANSI_WARNINGS OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET ARITHABORT OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET AUTO_CLOSE OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET AUTO_SHRINK OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET AUTO_UPDATE_STATISTICS ON 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET CURSOR_CLOSE_ON_COMMIT OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET CURSOR_DEFAULT  GLOBAL 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET CONCAT_NULL_YIELDS_NULL OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET NUMERIC_ROUNDABORT OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET QUOTED_IDENTIFIER OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET RECURSIVE_TRIGGERS OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET  ENABLE_BROKER 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET AUTO_UPDATE_STATISTICS_ASYNC OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET DATE_CORRELATION_OPTIMIZATION OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET TRUSTWORTHY ON 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET ALLOW_SNAPSHOT_ISOLATION OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET PARAMETERIZATION SIMPLE 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET READ_COMMITTED_SNAPSHOT ON 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET HONOR_BROKER_PRIORITY OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET RECOVERY SIMPLE 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET  MULTI_USER 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET PAGE_VERIFY CHECKSUM  
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET DB_CHAINING OFF 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET FILESTREAM( NON_TRANSACTED_ACCESS = OFF ) 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET TARGET_RECOVERY_TIME = 60 SECONDS 
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET DELAYED_DURABILITY = DISABLED 
+GO
+EXEC sys.sp_db_vardecimal_storage_format N'DBMSYS_CityofTucson_City_of_Tucson', N'ON'
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET QUERY_STORE = OFF
+GO
+USE [DBMSYS_CityofTucson_City_of_Tucson]
+GO
+ALTER DATABASE SCOPED CONFIGURATION SET LEGACY_CARDINALITY_ESTIMATION = OFF;
+GO
+ALTER DATABASE SCOPED CONFIGURATION SET MAXDOP = 0;
+GO
+ALTER DATABASE SCOPED CONFIGURATION SET PARAMETER_SNIFFING = ON;
+GO
+ALTER DATABASE SCOPED CONFIGURATION SET QUERY_OPTIMIZER_HOTFIXES = OFF;
+GO
+ALTER DATABASE [DBMSYS_CityofTucson_City_of_Tucson] SET  READ_WRITE 
+GO
